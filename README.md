@@ -1,24 +1,26 @@
-TeamPCP — Temel Bulgular
+TeamPCP Threat Intelligence Report
+Senior Cyber Security Expert — Onur OKTAY
+A comprehensive threat intelligence article on the TeamPCP hacker group — covering their operations, attack techniques, MITRE ATT&CK mapping, IOCs, and detection engineering guidance.
+Live Page
 
-Flare araştırmacıları tarafından ilk kez Aralık 2025'te belgelenen TeamPCP, unauthenticated cloud control plane'leri exploit ederek standardize payload'lar dağıtan, cloud-native bir siber suç platformu olarak tanımlanmaktadır.
+Deployed via GitHub Pages: https://<your-username>.github.io/<repo-name>/
 
-Kampanyanın özeti: 
+Contents
+FileDescriptionindex.htmlSelf-contained threat intelligence report
+Topics Covered
 
-TeamPCP, güvenlik açığı tarayıcısı Trivy ve ilgili GitHub Actions'ı compromise ettikten sonra Checkmarx araçlarına, KICS GitHub Action'ına ve OpenVSX extension'larına yayıldı. Tüm bu vakalarda credential çalımı üzerinden kompromi gerçekleşti. 
+TeamPCP actor profile & operational timeline
+Cascade supply chain attack chain (CVE-2026-33634, CVSS 9.4)
+MITRE ATT&CK TTPs (13 techniques)
+Detection rules: Falco, Splunk SPL, Wazuh
+Active IOCs (C2 IPs, malicious package versions)
+Preventive controls & recommendations
 
-Neden benzersizdir: 
+How to Publish on GitHub Pages
 
-Kampanya üç temel özelliğiyle öne çıkıyor: self-propagating worm kabiliyeti, blockchain tabanlı C2 (ICP canister'ı C2 olarak kullanan ilk belgelenmiş tehdit aktörü) ve güvenlik araçlarının saldırı yüzeyi olarak kullanılması en titiz organizasyonlar en yüksek riske maruz kaldı.
-
-Detection yaklaşımı: Static analiz ve dependency scanning başarısız oldu; runtime detection başarılı oldu. 
-Saldırgan, nihayetinde credential çalmak ve exfil yapmak için sistem çağrıları kullanmak zorundadır  bu çağrılar, saldırganın koda nasıl eriştiğinden bağımsız olarak gözlemlenebilir.
-
-Makalede şunlar bulunuyor:
-
-# Tam operasyonel kronoloji (Temmuz 2025 → Mart 2026)
-# 9 adımlı cascade kill chain diyagramı
-# 13 MITRE ATT&CK tekniği mapping
-# Falco, Splunk SPL ve Wazuh detection rule'ları
-# Aktif IOC listesi (C2 IP, malicious paket versiyonları)
-# 10 madde önleyici kontrol önerisi
-
+Create a new GitHub repository (e.g. teampcp-threat-report)
+Upload index.html and README.md to the main branch
+Go to Settings → Pages
+Under Source, select Deploy from a branch → main → / (root)
+Click Save — your page will be live in ~1 minute at:
+https://<your-username>.github.io/teampcp-threat-report/
