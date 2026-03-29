@@ -11,7 +11,7 @@ Neden benzersizdir:
 Kampanya üç temel özelliğiyle öne çıkıyor: self-propagating worm kabiliyeti, blockchain tabanlı C2 (ICP canister'ı C2 olarak kullanan ilk belgelenmiş tehdit aktörü) ve güvenlik araçlarının saldırı yüzeyi olarak kullanılması en titiz organizasyonlar en yüksek riske maruz kaldı.
 
 Detection yaklaşımı: Static analiz ve dependency scanning başarısız oldu; runtime detection başarılı oldu. 
-Saldırgan, nihayetinde credential çalmak ve exfil yapmak için sistem çağrıları kullanmak zorundadır — bu çağrılar, saldırganın koda nasıl eriştiğinden bağımsız olarak gözlemlenebilir.
+Saldırgan, nihayetinde credential çalmak ve exfil yapmak için sistem çağrıları kullanmak zorundadır  bu çağrılar, saldırganın koda nasıl eriştiğinden bağımsız olarak gözlemlenebilir.
 
 Makalede şunlar bulunuyor:
 
